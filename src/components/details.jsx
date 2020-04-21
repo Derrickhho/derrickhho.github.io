@@ -26,11 +26,13 @@ class Details extends Component {
         var detailMetadata = "Product Design • August 2019 - Present";
         var detailRel = [
           {
-            link: "linkhere",
+            link:
+              "https://blog.dropbox.com/topics/company/dropbox--the-smart-workspace",
             name: "Dropbox: the smart workspace"
           },
           {
-            link: "linkhere",
+            link:
+              "https://www.theverge.com/2019/4/9/18300086/google-docs-sheets-slides-dropbox-integration-collaborate-edit-share-filesharing-business-g-suite",
             name:
               "[The Verge] Google Docs, Sheets, and Slides can now be edited and shared within Dropbox"
           }
@@ -41,9 +43,10 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Design Lead • January 2020 - Present";
         var detailRel = [
-          { link: "link", name: "Glisten.AI" },
+          { link: "https://www.glisten.ai/", name: "Glisten.AI" },
           {
-            link: "null",
+            link:
+              "https://techcrunch.com/2020/03/13/glisten-uses-computer-vision-to-break-down-fashion-photos-to-their-styles-and-parts/",
             name: "[Tech Crunch] Glisten uses computer vision to ..."
           }
         ];
@@ -54,11 +57,12 @@ class Details extends Component {
         var detailMetadata = "Creating • January 2020 - Present";
         var detailRel = [
           {
-            link: null,
+            link: "https://www.studentswho.design/",
             name: "StudentsWho.Design"
           },
           {
-            link: null,
+            link:
+              "https://www.figma.com/blog/how-students-who-design-set-up-figma-in-their-online-classroom/",
             name: "[Figma Blog] How Students Who Design set u..."
           }
         ];
@@ -67,7 +71,9 @@ class Details extends Component {
         var detailImage = "exp-buzzfeed.png";
         var detailHeader = this.props.value;
         var detailMetadata = "Product Design • January 2020 - Present";
-        var detailRel = [{ link: null, name: "Buzzfeed.com" }];
+        var detailRel = [
+          { link: "https://www.buzzfeed.com/", name: "Buzzfeed.com" }
+        ];
         break;
       case "exp-resume":
         var detailImage = "exp-resume.png";
@@ -162,6 +168,67 @@ class Details extends Component {
         var detailRel = [{ link: null, name: null }];
         break;
 
+      //ABOUT
+      case "abt-resume":
+        var detailImage = "abt-resume.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "Oct 20, 2016";
+        var detailRel = [
+          {
+            link: "https://medium.com/@derrickhho",
+            name: "[medium] @derrickhho"
+          }
+        ];
+        break;
+
+      case "abt-medium":
+        var detailImage = "abt-medium.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "Oct 20, 2016";
+        var detailRel = [
+          {
+            link: "https://medium.com/@derrickhho",
+            name: "[medium] @derrickhho"
+          }
+        ];
+        break;
+
+      case "abt-twitter":
+        var detailImage = "abt-twitter.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "June 2, 2017";
+        var detailRel = [
+          {
+            link: "https://twitter.com/derrickhho",
+            name: "[twitter] @derrickhho"
+          }
+        ];
+        break;
+
+      case "abt-linkedin":
+        var detailImage = "abt-linkedin.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "June 2, 2017";
+        var detailRel = [
+          {
+            link: "https://linkedin.com/in/derrickhho",
+            name: "[linkedin] /derrickhho"
+          }
+        ];
+        break;
+
+      case "abt-dribbble":
+        var detailImage = "abt-dribbble.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "June 2, 2017";
+        var detailRel = [
+          {
+            link: "https://dribbble.com/derrickhho",
+            name: "[dribbble] /derrickhho"
+          }
+        ];
+        break;
+
       default:
         var detailImage = "error.png";
         var detailHeader = this.props.value;
@@ -180,12 +247,7 @@ class Details extends Component {
             backgroundPosition: "center center",
             backgroundRepeat: "no-repeat"
           }}
-        >
-          {/* <img
-            src={require("../thumbnails/" + detailImage)}
-            alt={"detailimage"}
-          /> */}
-        </div>
+        ></div>
         <p className="Detail-header">{this.props.value}</p>
         <p className="Detail-metadata">{detailMetadata}</p>
         {this.relLinksExist}
@@ -195,7 +257,7 @@ class Details extends Component {
         {detailRel.map(item => (
           <ul>
             <li>
-              <a className="Detail-link" href={item.link}>
+              <a className="Detail-link" href={item.link} target="_blank">
                 {item.name}
               </a>
             </li>

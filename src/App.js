@@ -43,13 +43,15 @@ class App extends Component {
     switch (this.state.columnIndex1) {
       //EXPERIENCE
       case 0:
-        return 4;
+        return 3;
       case 1:
         return 4;
       case 2:
         return 3;
       case 3:
         return 1;
+      case 4:
+        return 4;
     }
   };
 
@@ -57,7 +59,7 @@ class App extends Component {
     // var arrayLength = e.target.id);
     if (this.state.currentColumn === 1) {
       // down key
-      if (this.state.columnIndex1 !== 3) {
+      if (this.state.columnIndex1 !== 4) {
         if (e.keyCode === 40) {
           this.setState({ columnIndex1: this.state.columnIndex1 + 1 });
         }
@@ -105,7 +107,8 @@ class App extends Component {
       { id: 0, key: "experience", value: "experience", type: "folder" },
       { id: 1, key: "cs", value: "case studies", type: "folder" },
       { id: 2, key: "doodles", value: "doodles", type: "folder" },
-      { id: 3, key: "writing", value: "writing", type: "folder" }
+      { id: 3, key: "writing", value: "writing", type: "folder" },
+      { id: 4, key: "about", value: "about me", type: "folder" }
     ];
 
     // column 2
@@ -140,13 +143,6 @@ class App extends Component {
         detail: "exp-buzzfeed",
         value: "Buzzfeed",
         type: "buzzfeed"
-      },
-      {
-        id: 4,
-        link: "link",
-        detail: "exp-resume",
-        value: "Resume",
-        type: "file"
       }
     ];
 
@@ -229,25 +225,45 @@ class App extends Component {
       }
     ];
 
-    var music = [
-      { id: 0, link: "link", value: "locke", type: "file" },
+    var about = [
+      {
+        id: 0,
+        detail: "abt-resume",
+        link: "./documents/resume.pdf",
+        value: "Resume",
+        type: "file"
+      },
       {
         id: 1,
-        link: "link",
-        value: "Paper - New User Onboarding",
-        type: "file"
+        detail: "abt-linkedin",
+        link: "https://www.linkedin.com/in/derrickhho/",
+        value: "LinkedIn",
+        type: "linkedin"
       },
-      { id: 2, link: "link", value: "dropbox link settings", type: "file" },
+      {
+        id: 2,
+        detail: "abt-twitter",
+        link: "https://twitter.com/derrickhho",
+        value: "Twitter",
+        type: "twitter"
+      },
       {
         id: 3,
-        link: "link",
-        value: "buzzfeed internal feedback",
-        type: "file"
+        detail: "abt-medium",
+        link: "https://medium.com/@derrickhho",
+        value: "Medium",
+        type: "medium"
       },
-      { id: 4, link: "link", value: "buzzfeed quizes", type: "file" }
+      {
+        id: 4,
+        detail: "abt-dribbble",
+        link: "https://dribbble.com/derrickhho",
+        value: "Dribbble",
+        type: "dribbble"
+      }
     ];
 
-    var column2 = [experience, caseStudies, doodles, writing, music];
+    var column2 = [experience, caseStudies, doodles, writing, about];
 
     // Map out Column 1
     var list1 = column1.map(item => (
@@ -301,7 +317,7 @@ class App extends Component {
       <div id={arrayLength} className="App" tabIndex="0">
         {/* // <div className="App"> */}
 
-        <div className="Finder-container Responsive-width mobile">
+        <div className="Finder-container Responsive-width">
           <div className="Finder-column-lists">{list1}</div>
           <div className="Finder-column-lists">{list2}</div>
           <div className="Finder-column-details">{list3}</div>
