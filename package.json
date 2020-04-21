@@ -14,13 +14,12 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "rebass": "^4.0.7",
-    "homepage": "http://derrickhho.github.io/deho.design/react-gh-pages"
-
+    "homepage": "http://derrickhho.github.io"
   },
   "scripts": {
     "start": "react-scripts start",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
