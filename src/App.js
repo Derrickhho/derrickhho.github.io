@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./App.scss";
+import "./Mobile.scss";
 import Cell from "./components/cell";
 import Details from "./components/details";
 
@@ -10,7 +11,7 @@ class App extends Component {
       columnIndex1: 0,
       columnIndex2: 0,
       currentColumn: 2,
-      arrayLength: 10
+      arrayLength: 10,
     };
   }
 
@@ -29,12 +30,12 @@ class App extends Component {
       this.setState({
         columnIndex1: id,
         columnIndex2: 0,
-        currentColumn: 1
+        currentColumn: 1,
       });
     } else if (column === 2) {
       this.setState({
         columnIndex2: id,
-        currentColumn: 2
+        currentColumn: 2,
       });
     }
   };
@@ -43,7 +44,7 @@ class App extends Component {
     switch (this.state.columnIndex1) {
       //EXPERIENCE
       case 0:
-        return 4;
+        return 5;
       case 1:
         return 3;
       case 2:
@@ -55,7 +56,7 @@ class App extends Component {
     }
   };
 
-  onKeyPressed = e => {
+  onKeyPressed = (e) => {
     // var arrayLength = e.target.id);
     if (this.state.currentColumn === 1) {
       // down key
@@ -108,7 +109,7 @@ class App extends Component {
       { id: 1, key: "experience", value: "experience", type: "folder" },
       { id: 2, key: "cs", value: "case studies", type: "folder" },
       { id: 3, key: "doodles", value: "doodles", type: "folder" },
-      { id: 4, key: "writing", value: "writing", type: "folder" }
+      { id: 4, key: "writing", value: "writing", type: "folder" },
     ];
 
     // column 2
@@ -119,7 +120,7 @@ class App extends Component {
         detail: "exp-dropbox",
         value: "Dropbox",
         type: "dropbox",
-        wip: true
+        wip: true,
       },
       {
         detail: "exp-glisten",
@@ -127,7 +128,7 @@ class App extends Component {
         id: 1,
         value: "Glisten.AI",
         type: "glisten",
-        wip: true
+        wip: true,
       },
       {
         id: 2,
@@ -135,15 +136,15 @@ class App extends Component {
         detail: "exp-swd",
         value: "StudentsWho.Design",
         type: "swd",
-        wip: true
+        wip: true,
       },
       {
         id: 3,
         link: "http://www.buzzfeed.com/",
         detail: "exp-buzzfeed",
         value: "Buzzfeed",
-        type: "buzzfeed"
-      }
+        type: "buzzfeed",
+      },
     ];
 
     var caseStudies = [
@@ -152,36 +153,37 @@ class App extends Component {
         detail: "cs-locked",
         value: "Confidential",
         type: "lock",
-        status: "inactive"
+        status: "inactive",
       },
       {
         id: 1,
-        link: "link",
+        link: "./src/documents/Paper.pdf",
         detail: "cs-paper",
         value: "Paper - New User Onboarding",
-        type: "file-dropbox"
+        type: "file-dropbox",
       },
       {
         id: 2,
-        link: "link",
+        link:
+          "https://paper.dropbox.com/published/Clarifying-Link-Settings--AyqzquFqnoODug92j4cMZz12Bg-SDMaumBnLMnhLsoVEP5qdkt",
         detail: "cs-links",
         value: "Dropbox - Link Settings",
-        type: "file-dropbox"
+        type: "file-dropbox",
       },
       {
         id: 3,
-        link: "link",
+        link: "./src/documents/BuzzFeedBack.pdf",
         detail: "cs-feedback",
         value: "Buzzfeed - Internal Feedback",
-        type: "file-buzzfeed"
+        type: "file-buzzfeed",
       },
       {
         id: 4,
-        link: "link",
+        link: "./src/documents/GreatestHits.pdf",
         detail: "cs-quizzes",
         value: "Buzzfeed - Quizzes",
-        type: "file-buzzfeed"
-      }
+        type: "file-buzzfeed",
+      },
     ];
     var doodles = [
       {
@@ -189,29 +191,29 @@ class App extends Component {
         link: "https://www.instagram.com/p/B-VbUrljgZ2/",
         detail: "dood-far",
         value: "Far Out",
-        type: "image"
+        type: "image",
       },
       {
         id: 1,
         link: "https://www.instagram.com/p/B-OKovmD5Uv/",
         detail: "dood-ole",
         value: "Olé",
-        type: "image"
+        type: "image",
       },
       {
         id: 2,
         link: "https://www.instagram.com/p/B-L-6UsjNPm/",
         detail: "dood-splat",
         value: "Splat",
-        type: "image"
+        type: "image",
       },
       {
         id: 3,
         link: "https://www.instagram.com/p/B9wvLFhJn1b/",
         detail: "dood-floater",
         value: "Floater",
-        type: "image"
-      }
+        type: "image",
+      },
     ];
 
     var writing = [
@@ -221,15 +223,15 @@ class App extends Component {
           "https://medium.com/@derrickhho/what-hospitality-administration-means-to-me-9f120302bef7",
         detail: "wr-hospitality",
         value: "How I Went From Hospitality to Product Design",
-        type: "wr-medium"
+        type: "wr-medium",
       },
       {
         id: 1,
         link: "https://medium.com/@derrickhho/now-what-f0ec6dd4d108",
         detail: "wr-nowwhat",
         value: "Now What?",
-        type: "wr-medium"
-      }
+        type: "wr-medium",
+      },
     ];
 
     var about = [
@@ -237,36 +239,43 @@ class App extends Component {
         id: 0,
         detail: "abt-readme",
         value: "README",
-        type: "file"
+        type: "file",
       },
       {
         id: 1,
-        detail: "abt-resume",
+        detail: "abt-derrick",
         link: "./src/documents/resume.pdf",
-        value: "Resume",
-        type: "file"
+        value: "Derrick Ho",
+        type: "deho",
       },
       {
         id: 2,
-        detail: "abt-linkedin",
-        link: "https://www.linkedin.com/in/derrickhho/",
-        value: "LinkedIn",
-        type: "linkedin"
+        detail: "abt-resume",
+        link: "./src/documents/resume.pdf",
+        value: "Resume",
+        type: "file",
       },
       {
         id: 3,
-        detail: "abt-twitter",
-        link: "https://twitter.com/derrickhho",
-        value: "Twitter",
-        type: "twitter"
+        detail: "abt-linkedin",
+        link: "https://www.linkedin.com/in/derrickhho/",
+        value: "LinkedIn",
+        type: "linkedin",
       },
       {
         id: 4,
+        detail: "abt-twitter",
+        link: "https://twitter.com/derrickhho",
+        value: "Twitter",
+        type: "twitter",
+      },
+      {
+        id: 5,
         detail: "abt-instagram",
         link: "https://www.instagram.com/derrick.doodles/",
         value: "Instagram",
-        type: "instagram"
-      }
+        type: "instagram",
+      },
       // {
       //   id: 5,
       //   detail: "abt-medium",
@@ -284,7 +293,7 @@ class App extends Component {
     ];
 
     var column2 = [about, experience, caseStudies, doodles, writing];
-    column1.map(item => (
+    column1.map((item) => (
       <Cell
         id={item.id}
         column={1}
@@ -299,7 +308,7 @@ class App extends Component {
     ));
 
     // Map out Column 1
-    var list1 = column1.map(item => (
+    var list1 = column1.map((item) => (
       <Cell
         id={item.id}
         column={1}
@@ -317,7 +326,7 @@ class App extends Component {
     var arrayLength = column2Array.length;
 
     // Map out Column 2
-    var list2 = column2Array.map(item => (
+    var list2 = column2Array.map((item) => (
       <Cell
         id={item.id}
         column={2}
@@ -348,15 +357,82 @@ class App extends Component {
 
     return (
       <div id={arrayLength} className="App" tabIndex="0">
-        {/* // <div className="App"> */}
-
-        <div className="Finder-container Responsive-width">
+        <div className="Finder-container Responsive-width desktop">
           <div className="Finder-column-lists">{list1}</div>
           <div className="Finder-column-lists">{list2}</div>
           <div className="Finder-column-details">{list3}</div>
         </div>
-        <div className="Footer">
-          <p>Footer</p>
+
+        <div className="Mobile-container Responsive-width mobile">
+          <div>test</div>
+          <div>
+            <p className="Detail-header">👋 Hi, I'm Derrick</p>
+
+            <p className="Detail-body">
+              I like jigsaw puzzles, biking, Secret Santa, and Tom Petty and the
+              Heartbreakers.
+            </p>
+            <hr />
+            <p className="Detail-subheader">Currently, I am </p>
+            <ul className="Detail-body">
+              <li>
+                Designing{" "}
+                <a href="https://www.dropbox.com/?_hp=c" target="_blank">
+                  @Dropbox
+                </a>
+                ,
+              </li>
+              <li>
+                Designing{" "}
+                <a href="https://www.glisten.ai/" target="_blank">
+                  @Glisten.AI
+                </a>
+                ,
+              </li>
+              <li>
+                Building{" "}
+                <a href="https://www.studentswho.design/" target="_blank">
+                  @StudentsWho.Desgin
+                </a>
+                ,
+              </li>
+              <li>
+                and Doodling{" "}
+                <a
+                  href="https://www.instagram.com/derrick.doodles/"
+                  target="_blank"
+                >
+                  @derrick.doodles
+                </a>
+                .
+              </li>
+            </ul>
+
+            <p className="Detail-subheader">Previously, I have </p>
+            <ul className="Detail-body">
+              <li>
+                Designed{" "}
+                <a href="https://www.buzzfeed.com/" target="_blank">
+                  @BuzzFeed
+                </a>
+                ,
+              </li>
+              <li>
+                Hotel-ed{" "}
+                <a href="https://sha.cornell.edu/" target="_blank">
+                  @Cornell
+                </a>
+                ,
+              </li>
+              <li>
+                and HCI-ed{" "}
+                <a href="https://mhcid.washington.edu/" target="_blank">
+                  @UW
+                </a>
+                .
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     );

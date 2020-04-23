@@ -28,14 +28,14 @@ class Details extends Component {
           {
             link:
               "https://blog.dropbox.com/topics/company/dropbox--the-smart-workspace",
-            name: "Dropbox: the smart workspace"
+            name: "Dropbox: the smart workspace",
           },
           {
             link:
               "https://www.theverge.com/2019/4/9/18300086/google-docs-sheets-slides-dropbox-integration-collaborate-edit-share-filesharing-business-g-suite",
             name:
-              "[The Verge] Google Docs, Sheets, and Slides can now be edited and shared within Dropbox"
-          }
+              "[The Verge] Google Docs, Sheets, and Slides can now be edited and shared within Dropbox",
+          },
         ];
         break;
       case "exp-glisten":
@@ -47,8 +47,8 @@ class Details extends Component {
           {
             link:
               "https://techcrunch.com/2020/03/13/glisten-uses-computer-vision-to-break-down-fashion-photos-to-their-styles-and-parts/",
-            name: "[Tech Crunch] Glisten uses computer vision to ..."
-          }
+            name: "[Tech Crunch] Glisten uses computer vision to ...",
+          },
         ];
         break;
       case "exp-swd":
@@ -58,13 +58,13 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://www.studentswho.design/",
-            name: "StudentsWho.Design"
+            name: "StudentsWho.Design",
           },
           {
             link:
               "https://www.figma.com/blog/how-students-who-design-set-up-figma-in-their-online-classroom/",
-            name: "[Figma Blog] How Students Who Design set u..."
-          }
+            name: "[Figma Blog] How Students Who Design set u...",
+          },
         ];
         break;
       case "exp-buzzfeed":
@@ -72,7 +72,7 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Product Design • January 2020 - Present";
         var detailRel = [
-          { link: "https://www.buzzfeed.com/", name: "Buzzfeed.com" }
+          { link: "https://www.buzzfeed.com/", name: "Buzzfeed.com" },
         ];
         break;
 
@@ -80,7 +80,7 @@ class Details extends Component {
       case "cs-locked":
         var detailImage = "cs-locked.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "hmu to see this shiz";
+        var detailMetadata = "Contact me for more case studies";
         var detailRel = [{ link: null, name: "[Email] derrickhho@gmail.com" }];
 
         break;
@@ -90,17 +90,17 @@ class Details extends Component {
         var detailMetadata = "Dropbox • 2019";
         break;
       case "cs-links":
-        var detailImage = "error.png";
+        var detailImage = "cs-links.png";
         var detailHeader = this.props.value;
         var detailMetadata = "Dropbox Paper • 2019";
         break;
       case "cs-feedback":
-        var detailImage = "error.png";
+        var detailImage = "cs-feedback.png";
         var detailHeader = this.props.value;
         var detailMetadata = "Internal Tools • 2017";
         break;
       case "cs-quizzes":
-        var detailImage = "error.png";
+        var detailImage = "cs-quizzes.png";
         var detailHeader = this.props.value;
         var detailMetadata = "Quizzes • 2017";
         break;
@@ -111,8 +111,14 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Cascadilla Gorge • Ithaca, New York";
         var detailRel = [
-          { link: null, name: "[Doodle] @derrick.doodles" },
-          { link: null, name: "[Photo] @chewcheww" }
+          {
+            link: "https://www.instagram.com/derrick.doodles/",
+            name: "[Doodle] @derrick.doodles",
+          },
+          {
+            link: "https://www.instagram.com/chewcheww/",
+            name: "[Photo] @chewcheww",
+          },
         ];
         break;
       case "dood-ole":
@@ -120,8 +126,14 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Rob Roye Glacier Track • Wanaka, New Zealand";
         var detailRel = [
-          { link: null, name: "[Doodle] @derrick.doodles" },
-          { link: null, name: "[Photo] @cameron.outdoor" }
+          {
+            link: "https://www.instagram.com/derrick.doodles/",
+            name: "[Doodle] @derrick.doodles",
+          },
+          {
+            link: "https://www.camwalkerphoto.com/#1",
+            name: "[Photo] @cameron.outdoor",
+          },
         ];
         break;
       case "dood-splat":
@@ -129,8 +141,14 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Denali Mountain • Denali, Alaska";
         var detailRel = [
-          { link: null, name: "[Doodle] @derrick.doodles" },
-          { link: null, name: "[Photo] @cameron.outdoor" }
+          {
+            link: "https://www.instagram.com/derrick.doodles/",
+            name: "[Doodle] @derrick.doodles",
+          },
+          {
+            link: "https://www.camwalkerphoto.com/#1",
+            name: "[Photo] @cameron.outdoor",
+          },
         ];
         break;
       case "dood-floater":
@@ -138,8 +156,14 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailMetadata = "Pipeline • Oahu, Hawaii";
         var detailRel = [
-          { link: null, name: "[Doodle] @derrick.doodles" },
-          { link: null, name: "[Photo] @cameron.outdoor" }
+          {
+            link: "https://www.instagram.com/derrick.doodles/",
+            name: "[Doodle] @derrick.doodles",
+          },
+          {
+            link: "https://www.camwalkerphoto.com/#1",
+            name: "[Photo] @cameron.outdoor",
+          },
         ];
         break;
 
@@ -152,8 +176,8 @@ class Details extends Component {
           {
             link:
               "https://medium.com/@derrickhho/what-hospitality-administration-means-to-me-9f120302bef7",
-            name: "[Source] One Part Hotelier and One Part Product Designer"
-          }
+            name: "[Source] One Part Hotelier and One Part Product Designer",
+          },
         ];
         break;
 
@@ -164,8 +188,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://medium.com/@derrickhho/now-what-f0ec6dd4d108",
-            name: "[Source] Now What?"
-          }
+            name: "[Source] Now What?",
+          },
         ];
         break;
 
@@ -176,10 +200,21 @@ class Details extends Component {
         var detailRel = [
           {
             link: "mailto:derrickhho@gmail.com",
-            name: "[Email] derrickhho@gmail.com"
-          }
+            name: "[Email] derrickhho@gmail.com",
+          },
         ];
         break;
+
+      // case "abt-derrick":
+      //   var detailImage = "abt-resume.png";
+      //   var detailHeader = "Hi I'm Derrick";
+      //   var detailRel = [
+      //     {
+      //       link: "mailto:derrickhho@gmail.com",
+      //       name: "[Email] derrickhho@gmail.com",
+      //     },
+      //   ];
+      //   break;
 
       case "abt-medium":
         var detailImage = "abt-medium.png";
@@ -188,8 +223,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://medium.com/@derrickhho",
-            name: "[Medium] @derrickhho"
-          }
+            name: "[Medium] @derrickhho",
+          },
         ];
         break;
 
@@ -199,8 +234,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://twitter.com/derrickhho",
-            name: "[Twitter] @derrickhho"
-          }
+            name: "[Twitter] @derrickhho",
+          },
         ];
         break;
 
@@ -210,8 +245,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://linkedin.com/in/derrickhho",
-            name: "[LinkedIn] /derrickhho"
-          }
+            name: "[LinkedIn] /derrickhho",
+          },
         ];
         break;
 
@@ -221,8 +256,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://www.instagram.com/derrick.doodles/",
-            name: "[Instagram] @derrick.doodles"
-          }
+            name: "[Instagram] @derrick.doodles",
+          },
         ];
         break;
 
@@ -233,8 +268,8 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://dribbble.com/derrickhho",
-            name: "[Dribbble] /derrickhho"
-          }
+            name: "[Dribbble] /derrickhho",
+          },
         ];
         break;
 
@@ -257,12 +292,94 @@ class Details extends Component {
           </p>
           <img src={require("../misc/arrowKeys.svg")} />
           <p className="Detail-body">
-            Use the <b>arrow keys</b> to navigate between the folders/content
+            Use the <b>arrow keys</b> or <b>enter</b> to navigate between the
+            folders/content
           </p>
-          <img src={require("../misc/enterKey.svg")} />
+          <div className="tooltip">
+            <img s src={require("../misc/downKey.svg")} />
+            <p className="tooltip-body">
+              Don't know where to start? Press the <b>down arrow</b>, or click
+              <b>
+                {" "}
+                <span>
+                  <img className="icon" src={require("../icons/deho.svg")} />
+                </span>
+                Derrick Ho
+              </b>{" "}
+              on the left
+            </p>
+          </div>
+        </div>
+      );
+    } else if (this.props.detail == "abt-derrick") {
+      return (
+        <div>
+          <p className="Detail-header">👋 Hi, I'm Derrick</p>
+
           <p className="Detail-body">
-            Press <b>Enter</b> to learn more about a piece of content
+            I like jigsaw puzzles, biking, Secret Santa, and Tom Petty and the
+            Heartbreakers.
           </p>
+          <hr />
+          <p className="Detail-subheader">Currently, I am </p>
+          <ul className="Detail-body">
+            <li>
+              Designing{" "}
+              <a href="https://www.dropbox.com/?_hp=c" target="_blank">
+                @Dropbox
+              </a>
+              ,
+            </li>
+            <li>
+              Designing{" "}
+              <a href="https://www.glisten.ai/" target="_blank">
+                @Glisten.AI
+              </a>
+              ,
+            </li>
+            <li>
+              Building{" "}
+              <a href="https://www.studentswho.design/" target="_blank">
+                @StudentsWho.Desgin
+              </a>
+              ,
+            </li>
+            <li>
+              and Doodling{" "}
+              <a
+                href="https://www.instagram.com/derrick.doodles/"
+                target="_blank"
+              >
+                @derrick.doodles
+              </a>
+              .
+            </li>
+          </ul>
+
+          <p className="Detail-subheader">Previously, I have </p>
+          <ul className="Detail-body">
+            <li>
+              Designed{" "}
+              <a href="https://www.buzzfeed.com/" target="_blank">
+                @BuzzFeed
+              </a>
+              ,
+            </li>
+            <li>
+              Hotel-ed{" "}
+              <a href="https://sha.cornell.edu/" target="_blank">
+                @Cornell
+              </a>
+              ,
+            </li>
+            <li>
+              and HCI-ed{" "}
+              <a href="https://mhcid.washington.edu/" target="_blank">
+                @UW
+              </a>
+              .
+            </li>
+          </ul>
         </div>
       );
     } else {
@@ -276,16 +393,16 @@ class Details extends Component {
                 detailImage)})`,
               backgroundSize: "cover",
               backgroundPosition: "center center",
-              backgroundRepeat: "no-repeat"
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
-          <p className="Detail-header">{this.props.value}</p>
+          <p className="Detail-header">{detailHeader}</p>
           <p className="Detail-metadata">{detailMetadata}</p>
           {this.relLinksExist}
 
           <hr />
           <p className="Detail-subheader">Relevant links</p>
-          {detailRel.map(item => (
+          {detailRel.map((item) => (
             <ul>
               <li>
                 <a className="Detail-link" href={item.link} target="_blank">

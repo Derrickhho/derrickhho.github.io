@@ -1,0 +1,24 @@
+$black: #000000;
+$gray-1: #333333;
+$gray-2: #4f4f4f;
+$gray-3: #828282;
+$gray-4: #bdbdbd;
+$gray-5: #ebebeb;
+$white: #ffffff;
+$blue: #00a0fb;
+$gray: #e5e5e5;
+
+.Mobile-container {
+  margin: auto;
+  font-size: 20px;
+}
+
+.Mobile-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mobile-header {
+  outline: none !important;
+}

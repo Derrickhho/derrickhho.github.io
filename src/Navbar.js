@@ -1,8 +1,5 @@
 import React, { Component } from "react";
 import "./App.scss";
-// import CellColumn from "./components/cellList";
-import Cell from "./components/cell";
-import Details from "./components/details";
 
 class Navbar extends Component {
   constructor(props) {
