@@ -75,16 +75,6 @@ class Details extends Component {
           { link: "https://www.buzzfeed.com/", name: "Buzzfeed.com" }
         ];
         break;
-      case "exp-resume":
-        var detailImage = "exp-resume.png";
-        var detailHeader = this.props.value;
-        // var detailMetadata = "Last updated: ";
-        var detailRel = [
-          { link: null, name: "[LinkedIn] in/derrickhho" },
-          { link: null, name: "[Medium] @derrickhho" },
-          { link: null, name: "[Twitter] @derrickhho" }
-        ];
-        break;
 
       //CASES
       case "cs-locked":
@@ -158,25 +148,35 @@ class Details extends Component {
         var detailImage = "wr-hospitality.png";
         var detailHeader = this.props.value;
         var detailMetadata = "Oct 20, 2016";
-        var detailRel = [{ link: null, name: null }];
+        var detailRel = [
+          {
+            link:
+              "https://medium.com/@derrickhho/what-hospitality-administration-means-to-me-9f120302bef7",
+            name: "[Source] One Part Hotelier and One Part Product Designer"
+          }
+        ];
         break;
 
       case "wr-nowwhat":
         var detailImage = "wr-nowwhat.png";
         var detailHeader = this.props.value;
         var detailMetadata = "June 2, 2017";
-        var detailRel = [{ link: null, name: null }];
+        var detailRel = [
+          {
+            link: "https://medium.com/@derrickhho/now-what-f0ec6dd4d108",
+            name: "[Source] Now What?"
+          }
+        ];
         break;
 
       //ABOUT
       case "abt-resume":
         var detailImage = "abt-resume.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "Oct 20, 2016";
         var detailRel = [
           {
-            link: "https://medium.com/@derrickhho",
-            name: "[medium] @derrickhho"
+            link: "mailto:derrickhho@gmail.com",
+            name: "[Email] derrickhho@gmail.com"
           }
         ];
         break;
@@ -188,7 +188,7 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://medium.com/@derrickhho",
-            name: "[medium] @derrickhho"
+            name: "[Medium] @derrickhho"
           }
         ];
         break;
@@ -196,11 +196,10 @@ class Details extends Component {
       case "abt-twitter":
         var detailImage = "abt-twitter.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "June 2, 2017";
         var detailRel = [
           {
             link: "https://twitter.com/derrickhho",
-            name: "[twitter] @derrickhho"
+            name: "[Twitter] @derrickhho"
           }
         ];
         break;
@@ -208,11 +207,21 @@ class Details extends Component {
       case "abt-linkedin":
         var detailImage = "abt-linkedin.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "June 2, 2017";
         var detailRel = [
           {
             link: "https://linkedin.com/in/derrickhho",
-            name: "[linkedin] /derrickhho"
+            name: "[LinkedIn] /derrickhho"
+          }
+        ];
+        break;
+
+      case "abt-instagram":
+        var detailImage = "abt-instagram.png";
+        var detailHeader = this.props.value;
+        var detailRel = [
+          {
+            link: "https://www.instagram.com/derrick.doodles/",
+            name: "[Instagram] @derrick.doodles"
           }
         ];
         break;
@@ -224,7 +233,7 @@ class Details extends Component {
         var detailRel = [
           {
             link: "https://dribbble.com/derrickhho",
-            name: "[dribbble] /derrickhho"
+            name: "[Dribbble] /derrickhho"
           }
         ];
         break;
@@ -236,35 +245,58 @@ class Details extends Component {
         break;
     }
 
-    return (
-      <div>
-        <div
-          className="Detail-image"
-          onDoubleClick={this.openLink}
-          style={{
-            backgroundImage: `url(${require("../thumbnails/" + detailImage)})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-            backgroundRepeat: "no-repeat"
-          }}
-        ></div>
-        <p className="Detail-header">{this.props.value}</p>
-        <p className="Detail-metadata">{detailMetadata}</p>
-        {this.relLinksExist}
+    if (this.props.detail == "abt-readme") {
+      return (
+        <div>
+          <p className="Detail-header">How to navigate deho.design</p>
+          <hr />
+          <img src={require("../misc/click.svg")} />
+          <p className="Detail-body">
+            <b>Click</b> or <b>double click</b> the folders/content to navigate
+            and learn more
+          </p>
+          <img src={require("../misc/arrowKeys.svg")} />
+          <p className="Detail-body">
+            Use the <b>arrow keys</b> to navigate between the folders/content
+          </p>
+          <img src={require("../misc/enterKey.svg")} />
+          <p className="Detail-body">
+            Press <b>Enter</b> to learn more about a piece of content
+          </p>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <div
+            className="Detail-image"
+            onDoubleClick={this.openLink}
+            style={{
+              backgroundImage: `url(${require("../thumbnails/" +
+                detailImage)})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center center",
+              backgroundRepeat: "no-repeat"
+            }}
+          ></div>
+          <p className="Detail-header">{this.props.value}</p>
+          <p className="Detail-metadata">{detailMetadata}</p>
+          {this.relLinksExist}
 
-        <hr />
-        <p className="Detail-subheader">Relevant links</p>
-        {detailRel.map(item => (
-          <ul>
-            <li>
-              <a className="Detail-link" href={item.link} target="_blank">
-                {item.name}
-              </a>
-            </li>
-          </ul>
-        ))}
-      </div>
-    );
+          <hr />
+          <p className="Detail-subheader">Relevant links</p>
+          {detailRel.map(item => (
+            <ul>
+              <li>
+                <a className="Detail-link" href={item.link} target="_blank">
+                  {item.name}
+                </a>
+              </li>
+            </ul>
+          ))}
+        </div>
+      );
+    }
   }
 }
 

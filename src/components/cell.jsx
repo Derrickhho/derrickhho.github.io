@@ -69,7 +69,7 @@ class Cell extends Component {
 
   wip = () => {
     if (this.props.wip === true) {
-      return <span style={{ fontWeight: "bold" }}> [WIP]</span>;
+      return <span style={{ fontWeight: "bold" }}> [Current]</span>;
     }
   };
 

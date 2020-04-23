@@ -43,15 +43,15 @@ class App extends Component {
     switch (this.state.columnIndex1) {
       //EXPERIENCE
       case 0:
-        return 3;
+        return 4;
       case 1:
-        return 4;
-      case 2:
         return 3;
-      case 3:
-        return 1;
-      case 4:
+      case 2:
         return 4;
+      case 3:
+        return 3;
+      case 4:
+        return 1;
     }
   };
 
@@ -104,11 +104,11 @@ class App extends Component {
 
     // Base column
     var column1 = [
-      { id: 0, key: "experience", value: "experience", type: "folder" },
-      { id: 1, key: "cs", value: "case studies", type: "folder" },
-      { id: 2, key: "doodles", value: "doodles", type: "folder" },
-      { id: 3, key: "writing", value: "writing", type: "folder" },
-      { id: 4, key: "about", value: "about me", type: "folder" }
+      { id: 0, key: "about", value: "about me", type: "folder" },
+      { id: 1, key: "experience", value: "experience", type: "folder" },
+      { id: 2, key: "cs", value: "case studies", type: "folder" },
+      { id: 3, key: "doodles", value: "doodles", type: "folder" },
+      { id: 4, key: "writing", value: "writing", type: "folder" }
     ];
 
     // column 2
@@ -186,22 +186,28 @@ class App extends Component {
     var doodles = [
       {
         id: 0,
-        link: "link",
+        link: "https://www.instagram.com/p/B-VbUrljgZ2/",
         detail: "dood-far",
         value: "Far Out",
         type: "image"
       },
-      { id: 1, link: "link", detail: "dood-ole", value: "Olé", type: "image" },
+      {
+        id: 1,
+        link: "https://www.instagram.com/p/B-OKovmD5Uv/",
+        detail: "dood-ole",
+        value: "Olé",
+        type: "image"
+      },
       {
         id: 2,
-        link: "link",
+        link: "https://www.instagram.com/p/B-L-6UsjNPm/",
         detail: "dood-splat",
         value: "Splat",
         type: "image"
       },
       {
         id: 3,
-        link: "link",
+        link: "https://www.instagram.com/p/B9wvLFhJn1b/",
         detail: "dood-floater",
         value: "Floater",
         type: "image"
@@ -211,14 +217,15 @@ class App extends Component {
     var writing = [
       {
         id: 0,
-        link: "link",
+        link:
+          "https://medium.com/@derrickhho/what-hospitality-administration-means-to-me-9f120302bef7",
         detail: "wr-hospitality",
         value: "How I Went From Hospitality to Product Design",
         type: "wr-medium"
       },
       {
         id: 1,
-        link: "link",
+        link: "https://medium.com/@derrickhho/now-what-f0ec6dd4d108",
         detail: "wr-nowwhat",
         value: "Now What?",
         type: "wr-medium"
@@ -228,42 +235,68 @@ class App extends Component {
     var about = [
       {
         id: 0,
+        detail: "abt-readme",
+        value: "README",
+        type: "file"
+      },
+      {
+        id: 1,
         detail: "abt-resume",
         link: "./src/documents/resume.pdf",
         value: "Resume",
         type: "file"
       },
       {
-        id: 1,
+        id: 2,
         detail: "abt-linkedin",
         link: "https://www.linkedin.com/in/derrickhho/",
         value: "LinkedIn",
         type: "linkedin"
       },
       {
-        id: 2,
+        id: 3,
         detail: "abt-twitter",
         link: "https://twitter.com/derrickhho",
         value: "Twitter",
         type: "twitter"
       },
       {
-        id: 3,
-        detail: "abt-medium",
-        link: "https://medium.com/@derrickhho",
-        value: "Medium",
-        type: "medium"
-      },
-      {
         id: 4,
-        detail: "abt-dribbble",
-        link: "https://dribbble.com/derrickhho",
-        value: "Dribbble",
-        type: "dribbble"
+        detail: "abt-instagram",
+        link: "https://www.instagram.com/derrick.doodles/",
+        value: "Instagram",
+        type: "instagram"
       }
+      // {
+      //   id: 5,
+      //   detail: "abt-medium",
+      //   link: "https://medium.com/@derrickhho",
+      //   value: "Medium",
+      //   type: "medium"
+      // },
+      // {
+      //   id: 6,
+      //   detail: "abt-dribbble",
+      //   link: "https://dribbble.com/derrickhho",
+      //   value: "Dribbble",
+      //   type: "dribbble"
+      // }
     ];
 
-    var column2 = [experience, caseStudies, doodles, writing, about];
+    var column2 = [about, experience, caseStudies, doodles, writing];
+    column1.map(item => (
+      <Cell
+        id={item.id}
+        column={1}
+        value={item.value}
+        type={item.type}
+        wip={item.wip}
+        status={item.status}
+        onMouseDown={this.cellClicked}
+        selectedCell1={columnIndex1}
+        currentColumn={currentColumn}
+      />
+    ));
 
     // Map out Column 1
     var list1 = column1.map(item => (
@@ -322,7 +355,9 @@ class App extends Component {
           <div className="Finder-column-lists">{list2}</div>
           <div className="Finder-column-details">{list3}</div>
         </div>
-        <div className="Footer"> footer here</div>
+        <div className="Footer">
+          <p>Footer</p>
+        </div>
       </div>
     );
   }

@@ -52,6 +52,7 @@ hr {
   border: 0;
   height: 1px;
   background-color: $gray-5;
+  margin: 24px 0px 24px 0px;
 }
 
 .App {
@@ -192,7 +193,14 @@ hr {
 .Detail-header {
   font-size: 20px;
   font-weight: 700;
-  margin: 24px 0px 8px 0px;
+  margin: 12px 0px 8px 0px;
+}
+
+.Detail-body {
+  font-size: 14px;
+  color: $gray-2;
+  line-height: 1.5;
+  margin: 8px 0px 32px 0px;
 }
 
 .Detail-metadata {
@@ -227,6 +235,16 @@ hr {
   }
 }
 
+.howToImage {
+  width: 100%;
+  height: 100px;
+  background-image: url("./thumbnails/dood-ole.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 50px;
+}
 // .App-header {
 //   background-color: #282c34;
 //   min-height: 100vh;
