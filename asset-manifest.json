@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.afe9fb5f.chunk.css",
-    "main.js": "/static/js/main.6daf371b.chunk.js",
-    "main.js.map": "/static/js/main.6daf371b.chunk.js.map",
+    "main.css": "/static/css/main.2ae44ab2.chunk.css",
+    "main.js": "/static/js/main.b90f81f2.chunk.js",
+    "main.js.map": "/static/js/main.b90f81f2.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.b8485ccb.js",
     "runtime-main.js.map": "/static/js/runtime-main.b8485ccb.js.map",
     "static/js/2.1baace88.chunk.js": "/static/js/2.1baace88.chunk.js",
     "static/js/2.1baace88.chunk.js.map": "/static/js/2.1baace88.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.9d0d593be37e02672d1e380b20a4fbbc.js": "/precache-manifest.9d0d593be37e02672d1e380b20a4fbbc.js",
+    "precache-manifest.9fbd6ad72ee7f606973486af3ee3dfcb.js": "/precache-manifest.9fbd6ad72ee7f606973486af3ee3dfcb.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.afe9fb5f.chunk.css.map": "/static/css/main.afe9fb5f.chunk.css.map",
+    "static/css/main.2ae44ab2.chunk.css.map": "/static/css/main.2ae44ab2.chunk.css.map",
     "static/js/2.1baace88.chunk.js.LICENSE.txt": "/static/js/2.1baace88.chunk.js.LICENSE.txt",
+    "static/media/abt-instagram.png": "/static/media/abt-instagram.a12dd799.png",
     "static/media/abt-resume.png": "/static/media/abt-resume.514f7d8b.png",
     "static/media/arrow.svg": "/static/media/arrow.c23b5ea5.svg",
+    "static/media/arrowKeys.svg": "/static/media/arrowKeys.5544c0bd.svg",
     "static/media/buzzfeed-white.svg": "/static/media/buzzfeed-white.214f4b2c.svg",
     "static/media/buzzfeed.svg": "/static/media/buzzfeed.d10076b6.svg",
+    "static/media/click.svg": "/static/media/click.0fa97113.svg",
     "static/media/cs-paper.png": "/static/media/cs-paper.a2cb3791.png",
     "static/media/deho.svg": "/static/media/deho.ed167ec7.svg",
     "static/media/dood-farout.png": "/static/media/dood-farout.8c0b3817.png",
@@ -26,6 +29,7 @@
     "static/media/dribbble.svg": "/static/media/dribbble.64f47eb1.svg",
     "static/media/dropbox-white.svg": "/static/media/dropbox-white.3c2c0ffa.svg",
     "static/media/dropbox.svg": "/static/media/dropbox.b2f945a0.svg",
+    "static/media/enterKey.svg": "/static/media/enterKey.80bce64d.svg",
     "static/media/exp-buzzfeed.png": "/static/media/exp-buzzfeed.e7fadde1.png",
     "static/media/exp-dropbox-white.svg": "/static/media/exp-dropbox-white.4e854164.svg",
     "static/media/exp-dropbox.svg": "/static/media/exp-dropbox.0a32b57f.svg",
@@ -44,6 +48,8 @@
     "static/media/glisten.svg": "/static/media/glisten.a16abd18.svg",
     "static/media/image-white.svg": "/static/media/image-white.b5827eaf.svg",
     "static/media/image.svg": "/static/media/image.567eabe6.svg",
+    "static/media/instagram-white.svg": "/static/media/instagram-white.e78b1f6b.svg",
+    "static/media/instagram.svg": "/static/media/instagram.8a66693f.svg",
     "static/media/linkedin-white.svg": "/static/media/linkedin-white.e9e2fbc7.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.53fafa7f.svg",
     "static/media/lock-white.svg": "/static/media/lock-white.047f612d.svg",
@@ -63,7 +69,7 @@
   "entrypoints": [
     "static/js/runtime-main.b8485ccb.js",
     "static/js/2.1baace88.chunk.js",
-    "static/css/main.afe9fb5f.chunk.css",
-    "static/js/main.6daf371b.chunk.js"
+    "static/css/main.2ae44ab2.chunk.css",
+    "static/js/main.b90f81f2.chunk.js"
   ]
 }
