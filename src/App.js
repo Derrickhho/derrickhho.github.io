@@ -244,7 +244,6 @@ class App extends Component {
       {
         id: 1,
         detail: "abt-derrick",
-        link: "./src/documents/resume.pdf",
         value: "Derrick Ho",
         type: "deho",
       },
@@ -364,7 +363,6 @@ class App extends Component {
         </div>
 
         <div className="Mobile-container Responsive-width mobile">
-          <div>test</div>
           <div>
             <p className="Detail-header">👋 Hi, I'm Derrick</p>
 
