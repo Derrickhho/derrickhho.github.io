@@ -250,7 +250,7 @@ class App extends Component {
       {
         id: 2,
         detail: "abt-resume",
-        link: "./src/documents/resume.pdf",
+        link: "./src/documents/HoDerrick_Resume.pdf",
         value: "Resume",
         type: "file",
       },
