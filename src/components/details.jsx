@@ -300,11 +300,10 @@ class Details extends Component {
             <p className="tooltip-body">
               Don't know where to start? Press the <b>down arrow</b>, or click
               <b>
-                {" "}
-                <span>
+                <span className="tooltip-span">
                   <img className="icon" src={require("../icons/deho.svg")} />
+                  Derrick Ho
                 </span>
-                Derrick Ho
               </b>{" "}
               on the left
             </p>
