@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7701da204c73541411e53c225bdef21d",
+    "revision": "2d85ea58d1650c7f6f14a3888e5dc7db",
     "url": "/index.html"
   },
   {
-    "revision": "e841c619218ab23cc1d4",
+    "revision": "4a64d29ebe8a194dd3c1",
     "url": "/static/css/main.9f104f41.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.17997a2a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e841c619218ab23cc1d4",
-    "url": "/static/js/main.a348ab87.chunk.js"
+    "revision": "4a64d29ebe8a194dd3c1",
+    "url": "/static/js/main.a5130c8a.chunk.js"
   },
   {
     "revision": "b71fc92e9b0871852091",
@@ -80,20 +80,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/deho.ed167ec7.svg"
   },
   {
-    "revision": "8c0b3817cd631bbcee1ffa22a0195904",
-    "url": "/static/media/dood-farout.8c0b3817.png"
+    "revision": "ced6cccb541eb9762c18ed59bf24ffef",
+    "url": "/static/media/dood-farout.ced6cccb.png"
   },
   {
-    "revision": "2bfca8a23f55c694554e2e977ad4c823",
-    "url": "/static/media/dood-floater.2bfca8a2.png"
+    "revision": "e02c463018fa0eca49e78f06882b1d50",
+    "url": "/static/media/dood-floater.e02c4630.png"
   },
   {
-    "revision": "2073c0a58458de38cf3d4819bc99b27d",
-    "url": "/static/media/dood-ole.2073c0a5.png"
+    "revision": "976ebc264b600553e2112b61998a6ccc",
+    "url": "/static/media/dood-ole.976ebc26.png"
   },
   {
-    "revision": "c10d0f8acae0561109ea055cee0d8fa8",
-    "url": "/static/media/dood-splat.c10d0f8a.png"
+    "revision": "2429928c02a8346e7b7e14a73154118b",
+    "url": "/static/media/dood-splat.2429928c.png"
   },
   {
     "revision": "a926ee23dde66a36f71eb63975479d8b",
