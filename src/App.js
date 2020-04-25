@@ -3,8 +3,8 @@ import "./App.scss";
 import "./Mobile.scss";
 import Cell from "./components/cell";
 import Details from "./components/details";
-import column1JSON from "./column1.json";
-import column2JSON from "./column2.json";
+import column1JSON from "./JSONs/column1.json";
+import column2JSON from "./JSONs/column2.json";
 
 class App extends Component {
   constructor(props) {
@@ -106,7 +106,7 @@ class App extends Component {
     var experience = column2JSON.experience;
     var caseStudies = column2JSON.caseStudies;
     var doodles = column2JSON.doodles;
-    var writing = column2JSON.doodles;
+    var writing = column2JSON.writing;
     var about = column2JSON.about;
 
     var column2 = [about, experience, caseStudies, doodles, writing];
