@@ -3,6 +3,8 @@ import "./App.scss";
 import "./Mobile.scss";
 import Cell from "./components/cell";
 import Details from "./components/details";
+import column1JSON from "./column1.json";
+import column2JSON from "./column2.json";
 
 class App extends Component {
   constructor(props) {
@@ -18,12 +20,6 @@ class App extends Component {
   componentDidMount() {
     document.addEventListener("keydown", this.onKeyPressed);
   }
-
-  // Checks the status of the currently selected cell
-  statusCheck = () => {
-    console.log("woopimofo" + this.state.arrayLength);
-    console.log(this.state.columnIndex1, this.state.columnIndex2);
-  };
 
   cellClicked = (id, value, column) => {
     if (column === 1) {
@@ -104,207 +100,16 @@ class App extends Component {
     var currentColumn = this.state.currentColumn;
 
     // Base column
-    var column1 = [
-      { id: 0, key: "about", value: "about me", type: "folder" },
-      { id: 1, key: "experience", value: "experience", type: "folder" },
-      { id: 2, key: "cs", value: "case studies", type: "folder" },
-      { id: 3, key: "doodles", value: "doodles", type: "folder" },
-      { id: 4, key: "writing", value: "writing", type: "folder" },
-    ];
+    var column1 = column1JSON.column1;
 
-    // column 2
-    var experience = [
-      {
-        id: 0,
-        link: "http://www.dropbox.com/",
-        detail: "exp-dropbox",
-        value: "Dropbox",
-        type: "dropbox",
-        wip: true,
-      },
-      {
-        detail: "exp-glisten",
-        link: "http://www.glisten.ai/",
-        id: 1,
-        value: "Glisten.AI",
-        type: "glisten",
-        wip: true,
-      },
-      {
-        id: 2,
-        link: "http://www.studentswho.design/",
-        detail: "exp-swd",
-        value: "StudentsWho.Design",
-        type: "swd",
-        wip: true,
-      },
-      {
-        id: 3,
-        link: "http://www.buzzfeed.com/",
-        detail: "exp-buzzfeed",
-        value: "Buzzfeed",
-        type: "buzzfeed",
-      },
-    ];
-
-    var caseStudies = [
-      {
-        id: 0,
-        detail: "cs-locked",
-        value: "Confidential",
-        type: "lock",
-        status: "inactive",
-      },
-      {
-        id: 1,
-        link: "./src/documents/Paper.pdf",
-        detail: "cs-paper",
-        value: "Paper - New User Onboarding",
-        type: "file-dropbox",
-      },
-      {
-        id: 2,
-        link:
-          "https://paper.dropbox.com/published/Clarifying-Link-Settings--AyqzquFqnoODug92j4cMZz12Bg-SDMaumBnLMnhLsoVEP5qdkt",
-        detail: "cs-links",
-        value: "Dropbox - Link Settings",
-        type: "file-dropbox",
-      },
-      {
-        id: 3,
-        link: "./src/documents/BuzzFeedBack.pdf",
-        detail: "cs-feedback",
-        value: "Buzzfeed - Internal Feedback",
-        type: "file-buzzfeed",
-      },
-      {
-        id: 4,
-        link: "./src/documents/GreatestHits.pdf",
-        detail: "cs-quizzes",
-        value: "Buzzfeed - Quizzes",
-        type: "file-buzzfeed",
-      },
-    ];
-    var doodles = [
-      {
-        id: 0,
-        link: "https://www.instagram.com/p/B-VbUrljgZ2/",
-        detail: "dood-far",
-        value: "Far Out",
-        type: "image",
-      },
-      {
-        id: 1,
-        link: "https://www.instagram.com/p/B-OKovmD5Uv/",
-        detail: "dood-ole",
-        value: "Olé",
-        type: "image",
-      },
-      {
-        id: 2,
-        link: "https://www.instagram.com/p/B-L-6UsjNPm/",
-        detail: "dood-splat",
-        value: "Splat",
-        type: "image",
-      },
-      {
-        id: 3,
-        link: "https://www.instagram.com/p/B9wvLFhJn1b/",
-        detail: "dood-floater",
-        value: "Floater",
-        type: "image",
-      },
-    ];
-
-    var writing = [
-      {
-        id: 0,
-        link:
-          "https://medium.com/@derrickhho/what-hospitality-administration-means-to-me-9f120302bef7",
-        detail: "wr-hospitality",
-        value: "How I Went From Hospitality to Product Design",
-        type: "wr-medium",
-      },
-      {
-        id: 1,
-        link: "https://medium.com/@derrickhho/now-what-f0ec6dd4d108",
-        detail: "wr-nowwhat",
-        value: "Now What?",
-        type: "wr-medium",
-      },
-    ];
-
-    var about = [
-      {
-        id: 0,
-        detail: "abt-readme",
-        value: "README",
-        type: "file",
-      },
-      {
-        id: 1,
-        detail: "abt-derrick",
-        value: "Derrick Ho",
-        type: "deho",
-      },
-      {
-        id: 2,
-        detail: "abt-resume",
-        link: "./src/documents/HoDerrick_Resume.pdf",
-        value: "Resume",
-        type: "file",
-      },
-      {
-        id: 3,
-        detail: "abt-linkedin",
-        link: "https://www.linkedin.com/in/derrickhho/",
-        value: "LinkedIn",
-        type: "linkedin",
-      },
-      {
-        id: 4,
-        detail: "abt-twitter",
-        link: "https://twitter.com/derrickhho",
-        value: "Twitter",
-        type: "twitter",
-      },
-      {
-        id: 5,
-        detail: "abt-instagram",
-        link: "https://www.instagram.com/derrick.doodles/",
-        value: "Instagram",
-        type: "instagram",
-      },
-      // {
-      //   id: 5,
-      //   detail: "abt-medium",
-      //   link: "https://medium.com/@derrickhho",
-      //   value: "Medium",
-      //   type: "medium"
-      // },
-      // {
-      //   id: 6,
-      //   detail: "abt-dribbble",
-      //   link: "https://dribbble.com/derrickhho",
-      //   value: "Dribbble",
-      //   type: "dribbble"
-      // }
-    ];
+    // Column 2
+    var experience = column2JSON.experience;
+    var caseStudies = column2JSON.caseStudies;
+    var doodles = column2JSON.doodles;
+    var writing = column2JSON.doodles;
+    var about = column2JSON.about;
 
     var column2 = [about, experience, caseStudies, doodles, writing];
-    column1.map((item) => (
-      <Cell
-        id={item.id}
-        column={1}
-        value={item.value}
-        type={item.type}
-        wip={item.wip}
-        status={item.status}
-        onMouseDown={this.cellClicked}
-        selectedCell1={columnIndex1}
-        currentColumn={currentColumn}
-      />
-    ));
 
     // Map out Column 1
     var list1 = column1.map((item) => (
@@ -322,7 +127,6 @@ class App extends Component {
     ));
 
     var column2Array = column2[columnIndex1];
-    var arrayLength = column2Array.length;
 
     // Map out Column 2
     var list2 = column2Array.map((item) => (
@@ -352,17 +156,18 @@ class App extends Component {
       );
     }
 
-    // Details
-
     return (
-      <div id={arrayLength} className="App" tabIndex="0">
+      <div className="App" tabIndex="0">
+        {/* Desktop view */}
         <div className="Finder-container Responsive-width desktop">
           <div className="Finder-column-lists">{list1}</div>
           <div className="Finder-column-lists">{list2}</div>
           <div className="Finder-column-details">{list3}</div>
         </div>
 
+        {/* Mobile view, NEED TO CLEAN UP */}
         <div className="Mobile-container Responsive-width mobile">
+          <div className="banner">View on desktop for best experience</div>
           <div>
             <p className="Detail-header">👋 Hi, I'm Derrick</p>
 

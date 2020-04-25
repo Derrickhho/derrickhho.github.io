@@ -1,0 +1,10 @@
+{
+  "animals": ["dog", "cat", "donkey", "cow", "giraffe"],
+  "column1": [
+    { "id": 0, "key": "about", "value": "about me", "type": "folder" },
+    { "id": 1, "key": "experience", "value": "experience", "type": "folder" },
+    { "id": 2, "key": "cs", "value": "case studies", "type": "folder" },
+    { "id": 3, "key": "doodles", "value": "doodles", "type": "folder" },
+    { "id": 4, "key": "writing", "value": "writing", "type": "folder" }
+  ]
+}
