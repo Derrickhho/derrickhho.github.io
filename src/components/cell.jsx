@@ -4,7 +4,7 @@ class Cell extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isActive: false
+      isActive: false,
     };
   }
   componentDidMount() {
@@ -17,7 +17,7 @@ class Cell extends Component {
     }
   };
 
-  enterKeyPressed = e => {
+  enterKeyPressed = (e) => {
     if (
       this.props.column === this.props.currentColumn &&
       this.props.selectedCell2 === this.props.id
@@ -80,7 +80,7 @@ class Cell extends Component {
           className={"icon"}
           style={{
             backgroundImage: `url(${require("../icons/arrow.svg")})`,
-            float: "right"
+            float: "right",
           }}
         ></span>
       );
@@ -96,13 +96,11 @@ class Cell extends Component {
         className={cellClass}
         onMouseDown={this.cellClicked}
         onDoubleClick={this.openLink}
-        // onKeyDown={console.log("testbitch")}
       >
-        {/* <span className={iconType}></span> */}
         <span
           className={"icon"}
           style={{
-            backgroundImage: `url(${require("../icons/" + iconType)})`
+            backgroundImage: `url(${require("../icons/" + iconType)})`,
           }}
         ></span>
         <span style={{ overflow: "hidden", textOverflow: "ellipsis" }}>

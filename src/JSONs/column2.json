@@ -2,17 +2,17 @@
   "experience": [
     {
       "id": 0,
-      "link": "http://www.dropbox.com/",
-      "detail": "exp-dropbox",
-      "value": "Dropbox",
-      "type": "dropbox",
+      "link": "http://www.robinhood.com/",
+      "detail": "exp-robinhood",
+      "value": "Robinhood",
+      "type": "robinhood",
       "wip": true
     },
     {
       "detail": "exp-glisten",
       "link": "http://www.glisten.ai/",
       "id": 1,
-      "value": "Glisten.AI",
+      "value": "Glisten.AI (YC W20)",
       "type": "glisten",
       "wip": true
     },
@@ -26,12 +26,20 @@
     },
     {
       "id": 3,
+      "link": "http://www.dropbox.com/",
+      "detail": "exp-dropbox",
+      "value": "Dropbox",
+      "type": "dropbox"
+    },
+    {
+      "id": 4,
       "link": "http://www.buzzfeed.com/",
       "detail": "exp-buzzfeed",
       "value": "Buzzfeed",
       "type": "buzzfeed"
     }
   ],
+
   "caseStudies": [
     {
       "id": 0,

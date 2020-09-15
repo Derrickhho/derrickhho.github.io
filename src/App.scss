@@ -1,3 +1,4 @@
+$primary: #333333;
 $black: #000000;
 $gray-1: #333333;
 $gray-2: #4f4f4f;
@@ -47,6 +48,9 @@ a {
   font-weight: 400;
 }
 
+p {
+}
+
 ul {
   padding-left: 8px;
   list-style: square inside;
@@ -84,9 +88,9 @@ hr {
 
 .Finder-container {
   margin: auto;
-  height: 496px;
+  height: 480px;
   background-color: $white;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .Finder-container:after {
@@ -97,6 +101,7 @@ hr {
 
 .Finder-column-lists {
   float: left;
+  overflow: scroll;
   width: 31%;
   padding: 32px 12px 32px 12px;
   height: 100%;
@@ -108,6 +113,7 @@ hr {
   width: 38%;
   padding: 32px 12px 32px 12px;
   height: 100%;
+  overflow: scroll;
   border-right: 1px solid $gray-5;
 }
 
@@ -146,7 +152,7 @@ hr {
   padding: 12px;
   font-weight: 500;
   color: $white;
-  background-color: $gray-1;
+  background-color: $blue;
   border-radius: 4px;
   border-bottom: 1px solid $gray-5;
   -webkit-user-select: none; /* Safari */
@@ -206,11 +212,22 @@ hr {
   margin: 12px 0px 8px 0px;
 }
 
+.Detail-button {
+  width: 90%;
+  height: 32px;
+  background-color: $gray-2;
+  border-radius: 4px;
+  border: 0;
+  font-size: 14px;
+  color: $white;
+  margin: 8px 0px 8px 0px;
+}
+
 .Detail-body {
   font-size: 14px;
   color: $gray-2;
-  line-height: 1.5;
-  margin: 8px 0px 32px 0px;
+  line-height: 150%;
+  margin: 8px 0px 24px 0px;
 }
 
 .Detail-metadata {

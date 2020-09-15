@@ -42,12 +42,14 @@ class App extends Component {
       case 0:
         return 5;
       case 1:
-        return 3;
+        return 4;
       case 2:
         return 4;
       case 3:
         return 3;
       case 4:
+        return 1;
+      case 5:
         return 1;
     }
   };
@@ -181,7 +183,7 @@ class App extends Component {
               <li>
                 Designing{" "}
                 <a href="https://www.dropbox.com/?_hp=c" target="_blank">
-                  @Dropbox
+                  @Robinhood
                 </a>
                 ,
               </li>
@@ -213,6 +215,13 @@ class App extends Component {
 
             <p className="Detail-subheader">Previously, I have </p>
             <ul className="Detail-body">
+              <li>
+                Designed{" "}
+                <a href="https://www.dropbox.com/" target="_blank">
+                  @Dropbox
+                </a>
+                ,
+              </li>
               <li>
                 Designed{" "}
                 <a href="https://www.buzzfeed.com/" target="_blank">

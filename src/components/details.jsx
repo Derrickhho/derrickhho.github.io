@@ -20,6 +20,17 @@ class Details extends Component {
 
     switch (this.props.detail) {
       //EXPERIENCE
+      case "exp-robinhood":
+        var detailImage = "exp-robinhood.png";
+        var detailHeader = this.props.value;
+        var detailMetadata = "Product Design • July 2020 - Present";
+        var detailRel = [
+          {
+            link: "https://robinhood.com/us/en/",
+            name: "Robinhoood: Investing for Everyone",
+          },
+        ];
+        break;
       case "exp-dropbox":
         var detailImage = "exp-dropbox.png";
         var detailHeader = this.props.value;
@@ -41,9 +52,9 @@ class Details extends Component {
       case "exp-glisten":
         var detailImage = "exp-glisten.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "Design Lead • January 2020 - Present";
+        var detailMetadata = "Head of Design • January 2020 - Present";
         var detailRel = [
-          { link: "https://www.glisten.ai/", name: "Glisten.AI" },
+          { link: "https://www.glisten.ai/", name: "Glisten.AI (YC W20)" },
           {
             link:
               "https://techcrunch.com/2020/03/13/glisten-uses-computer-vision-to-break-down-fashion-photos-to-their-styles-and-parts/",
@@ -199,6 +210,10 @@ class Details extends Component {
         var detailHeader = this.props.value;
         var detailRel = [
           {
+            link: "./src/documents/HoDerrick_Resume.pdf",
+            name: "HoDerrick_Resume.pdf",
+          },
+          {
             link: "mailto:derrickhho@gmail.com",
             name: "[Email] derrickhho@gmail.com",
           },
@@ -276,14 +291,14 @@ class Details extends Component {
       default:
         var detailImage = "error.png";
         var detailHeader = this.props.value;
-        var detailMetadata = "test";
+        var detailMetadata = "default detail metadata";
         break;
     }
 
     if (this.props.detail == "abt-readme") {
       return (
         <div>
-          <p className="Detail-header">How to navigate deho.design</p>
+          <p className="Detail-header">📖 deho.README</p>
           <hr />
           <img src={require("../misc/click.svg")} />
           <p className="Detail-body">
@@ -315,17 +330,18 @@ class Details extends Component {
         <div>
           <p className="Detail-header">👋 Hi, I'm Derrick</p>
 
+          <hr />
+
           <p className="Detail-body">
             I like jigsaw puzzles, biking, Secret Santa, and Tom Petty and the
             Heartbreakers.
           </p>
-          <hr />
           <p className="Detail-subheader">Currently, I am </p>
           <ul className="Detail-body">
             <li>
               Designing{" "}
               <a href="https://www.dropbox.com/?_hp=c" target="_blank">
-                @Dropbox
+                @Robinhood
               </a>
               ,
             </li>
@@ -360,23 +376,16 @@ class Details extends Component {
             <li>
               Designed{" "}
               <a href="https://www.buzzfeed.com/" target="_blank">
+                @Dropbox
+              </a>
+              ,
+            </li>
+            <li>
+              and Designed{" "}
+              <a href="https://www.buzzfeed.com/" target="_blank">
                 @BuzzFeed
               </a>
               ,
-            </li>
-            <li>
-              Hotel-ed{" "}
-              <a href="https://sha.cornell.edu/" target="_blank">
-                @Cornell
-              </a>
-              ,
-            </li>
-            <li>
-              and HCI-ed{" "}
-              <a href="https://mhcid.washington.edu/" target="_blank">
-                @UW
-              </a>
-              .
             </li>
           </ul>
         </div>
@@ -395,6 +404,7 @@ class Details extends Component {
               backgroundRepeat: "no-repeat",
             }}
           ></div>
+
           <p className="Detail-header">{detailHeader}</p>
           <p className="Detail-metadata">{detailMetadata}</p>
           {this.relLinksExist}
