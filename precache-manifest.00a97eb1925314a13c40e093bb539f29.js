@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5af4337ccc7c0f52a669972f4092979f",
+    "revision": "498d973bb8a9bd1217bdaa3f89bcd6bf",
     "url": "/index.html"
   },
   {
-    "revision": "92ebc7718818874d8732",
-    "url": "/static/css/main.8b5cc34a.chunk.css"
+    "revision": "cf7c66963337fbfe1502",
+    "url": "/static/css/main.00906def.chunk.css"
   },
   {
     "revision": "00fc69f3219577a96f3f",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.2b4ca83c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "92ebc7718818874d8732",
-    "url": "/static/js/main.2c2759ec.chunk.js"
+    "revision": "cf7c66963337fbfe1502",
+    "url": "/static/js/main.ccb4a9c5.chunk.js"
   },
   {
     "revision": "b71fc92e9b0871852091",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/buzzfeed.d10076b6.svg"
   },
   {
-    "revision": "0fa971132ef2f6049b066cf511c49a71",
-    "url": "/static/media/click.0fa97113.svg"
+    "revision": "15ef4ea0ad7cd3215fa914713e412413",
+    "url": "/static/media/click.15ef4ea0.svg"
   },
   {
     "revision": "cdcaf09800698d8df5d69e1f2bbb9b67",
@@ -116,6 +116,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/dropbox.b2f945a0.svg"
   },
   {
+    "revision": "136651140f726ae272d83f7d69d6e661",
+    "url": "/static/media/exp-buzzfeed.13665114.gif"
+  },
+  {
     "revision": "e7fadde143569e36b0ed153b9b688b82",
     "url": "/static/media/exp-buzzfeed.e7fadde1.png"
   },
@@ -128,12 +132,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/exp-dropbox.0a32b57f.svg"
   },
   {
+    "revision": "3af225cc2d16ad553cf458080023045e",
+    "url": "/static/media/exp-dropbox.3af225cc.gif"
+  },
+  {
     "revision": "bc5ef3f6fcd8399b135b866a46e5acba",
     "url": "/static/media/exp-dropbox.bc5ef3f6.png"
   },
   {
     "revision": "17f82628f7af45e8c7430088a8f4f7d6",
     "url": "/static/media/exp-glisten.17f82628.png"
+  },
+  {
+    "revision": "c491a4d872e06cec1bf1b30337d90abb",
+    "url": "/static/media/exp-robinhood.c491a4d8.png"
   },
   {
     "revision": "9d8422348434cf2464e17f172a373b7b",
@@ -222,6 +234,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "00faad6d499cb0846328b08356afd459",
     "url": "/static/media/music.00faad6d.svg"
+  },
+  {
+    "revision": "d220a244682c32e32d4cbbfba1e9b372",
+    "url": "/static/media/robinhood-white.d220a244.svg"
+  },
+  {
+    "revision": "d727b1753fc7df3de7705bcf338a2b83",
+    "url": "/static/media/robinhood.d727b175.svg"
   },
   {
     "revision": "cc4d87f1c5dc2f00d07f0e87f7b47ada",
